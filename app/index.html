@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rho.Menubar</title>
+    <script type="text/javascript" charset="utf-8" src="../public/api/rhoapi-modules.js"></script>
+	
+	<script >
+
+function menuTest() {
+  Rho.NativeMenubar.mainMenu = [
+  { label: 'Home',action:'Home',disabled:false},
+  {label:'separator',action:'separator',disabled:false},
+  {label:'Options',action:'Options',disabled:false},
+  {label:'Log',action:'Log',disabled:false},
+  {label:'Refresh',action:'Refresh',disabled:false},
+  {label:'Exit',action:'Exit',disabled:false},
+  {label:'Sync',action:'Sync',disabled:false},
+  {label:'fullscreen',action:'fullscreen',disabled:false},
+  {label:'Load a page',action:'/app/loading.html',disabled:false}];
+}
+
+</script>
+
+	
+</head>
+
+<body>
+
+<h1>Rho.MenuBar</h1>
+<button onclick="menuTest()">Click me</button>
+
+
+</body>
+</html>
